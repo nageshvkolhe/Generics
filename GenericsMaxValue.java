@@ -1,9 +1,10 @@
 package com.generics;
 
 public class GenericsMaxValue {
+
 	public static void main(String[] args) {
 
-		Integer[] a = {4, 8, 5}; 
+		Float[] a = {1.5f, 4.5f, 3.9f}; 
 		toPrint(a);
 		System.out.println("print maximum Value");
 		System.out.println(max(a));
@@ -17,11 +18,12 @@ public class GenericsMaxValue {
 			}
 		}
 		return max;
-	}
-	private static <E> void toPrint(E[] a) {
-
-		for (E i:a) {
-			System.out.println(i);  
 		}
-	}
+		
+	private static <E> void toPrint(E[] a) {
+	
+		for (E i:a) {
+				System.out.println(i);  
+		}
+	}	
 }
